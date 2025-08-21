@@ -48,10 +48,6 @@ BancoDigital/
 ├─ ContaPoupanca.java
 └─ Main.java
 
-yaml
-Copiar
-Editar
-
 ---
 
 ### 2️⃣ Compilar
