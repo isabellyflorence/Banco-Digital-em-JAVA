@@ -58,31 +58,15 @@ Editar
 
 Abra o terminal na pasta do projeto e execute:
 
-```bash
-javac *.java
-3️⃣ Executar
-bash
-Copiar
-Editar
+``javac *.java``
+
+### 3️⃣ Executar
+
 java Main
+
 O programa exibirá no console todas as operações realizadas e os saldos das contas.
 
-Exemplo de Saída
-nginx
-Copiar
-Editar
-Conta #101 - Titular: João Silva - Saldo: R$1000.0
-Conta #202 - Titular: Maria Souza - Saldo: R$500.0
-Depósito de R$200.0 realizado com sucesso!
-Depósito de R$150.0 realizado com sucesso!
-Saque de R$50.0 realizado com sucesso!
-Saque de R$100.0 realizado com sucesso!
-Saque de R$300.0 realizado com sucesso!
-Depósito de R$300.0 realizado com sucesso!
-Transferência de R$300.0 para Maria Souza realizada com sucesso!
-Conta #101 - Titular: João Silva - Saldo: R$850.0
-Conta #202 - Titular: Maria Souza - Saldo: R$850.0
-Observações
+### Observações
 Projeto serve como exemplo de encapsulamento e polimorfismo em Java.
 
 É possível estender com novas funcionalidades, como:
