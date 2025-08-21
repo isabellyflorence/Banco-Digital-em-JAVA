@@ -1,48 +1,46 @@
-Banco Digital em Java - Orientação a Objetos
-Descrição
+# 🏦 Banco Digital em Java - Orientação a Objetos
 
-Este projeto é uma implementação de um Banco Digital utilizando os conceitos de Programação Orientada a Objetos (OOP) em Java.
+## Descrição
 
-O sistema modela contas bancárias que permitem realizar:
+Este projeto implementa um **Banco Digital** utilizando os conceitos de **Programação Orientada a Objetos (OOP)** em Java.  
 
-Depósitos
+O sistema modela **contas bancárias** que permitem:  
 
-Saques
+- Depósitos  
+- Saques  
+- Transferências entre contas da mesma instituição  
 
-Transferências entre contas da mesma instituição
+Os principais conceitos de OOP aplicados são: **Abstração, Encapsulamento, Herança e Polimorfismo**.
 
-Foram aplicados os principais conceitos de OOP: abstração, encapsulamento, herança e polimorfismo.
+---
 
-Estrutura do Projeto
+## Estrutura do Projeto
 
 O projeto contém as seguintes classes:
 
-Conta.java:
-Classe abstrata que representa uma conta bancária genérica. Contém atributos e métodos comuns a todas as contas.
+| Classe               | Descrição |
+|----------------------|-----------|
+| `Conta.java`         | Classe abstrata que representa uma conta bancária genérica, contendo atributos e métodos comuns a todas as contas. |
+| `ContaCorrente.java` | Herda de `Conta` e representa uma conta corrente, podendo ter comportamentos específicos. |
+| `ContaPoupanca.java` | Herda de `Conta` e representa uma conta poupança, podendo ter comportamentos específicos. |
+| `Main.java`          | Classe principal que instancia contas, realiza operações e exibe saldos. |
 
-ContaCorrente.java:
-Classe que herda de Conta e representa uma conta corrente. Pode ter comportamentos específicos da conta corrente.
+---
 
-ContaPoupanca.java:
-Classe que herda de Conta e representa uma conta poupança. Pode ter comportamentos específicos da poupança.
+## Conceitos de OOP Aplicados
 
-Main.java:
-Classe principal que instancia contas, realiza operações de depósito, saque e transferência, e exibe os saldos das contas.
+- **Abstração:** `Conta` abstrai os comportamentos essenciais de uma conta bancária.  
+- **Encapsulamento:** Atributos são protegidos, com acesso controlado via métodos (`getters`, `depositar`, `sacar`, `transferir`).  
+- **Herança:** `ContaCorrente` e `ContaPoupanca` reutilizam funcionalidades da classe base `Conta`.  
+- **Polimorfismo:** Objetos de diferentes tipos de contas podem ser tratados como instâncias da classe genérica `Conta`.
 
-Conceitos de OOP Aplicados
+---
 
-Abstração: Conta abstrai os comportamentos essenciais de uma conta bancária.
+## Como Executar
 
-Encapsulamento: Atributos da classe são protegidos, com acesso controlado via métodos.
+### 1️⃣ Organizar os arquivos
 
-Herança: ContaCorrente e ContaPoupanca reutilizam funcionalidades da classe base Conta.
-
-Polimorfismo: Objetos de contas diferentes podem ser tratados como instâncias da classe genérica Conta.
-
-Como Executar
-Passo 1: Organizar arquivos
-
-Coloque os arquivos do projeto em uma mesma pasta:
+Coloque todos os arquivos em uma mesma pasta:
 
 BancoDigital/
 ├─ Conta.java
@@ -50,22 +48,29 @@ BancoDigital/
 ├─ ContaPoupanca.java
 └─ Main.java
 
-Passo 2: Compilar
+yaml
+Copiar
+Editar
+
+---
+
+### 2️⃣ Compilar
 
 Abra o terminal na pasta do projeto e execute:
 
+```bash
 javac *.java
-
-Passo 3: Executar
-
-Depois de compilado, execute o programa:
-
+3️⃣ Executar
+bash
+Copiar
+Editar
 java Main
-
-
-O programa exibirá no console as operações realizadas e os saldos das contas.
+O programa exibirá no console todas as operações realizadas e os saldos das contas.
 
 Exemplo de Saída
+nginx
+Copiar
+Editar
 Conta #101 - Titular: João Silva - Saldo: R$1000.0
 Conta #202 - Titular: Maria Souza - Saldo: R$500.0
 Depósito de R$200.0 realizado com sucesso!
@@ -77,8 +82,16 @@ Depósito de R$300.0 realizado com sucesso!
 Transferência de R$300.0 para Maria Souza realizada com sucesso!
 Conta #101 - Titular: João Silva - Saldo: R$850.0
 Conta #202 - Titular: Maria Souza - Saldo: R$850.0
-
 Observações
+Projeto serve como exemplo de encapsulamento e polimorfismo em Java.
+
+É possível estender com novas funcionalidades, como:
+
+Juros para poupança
+
+Limite para conta corrente
+
+Interface gráfica para interação do usuário
 
 O projeto serve como exemplo de encapsulamento e polimorfismo em Java.
 
